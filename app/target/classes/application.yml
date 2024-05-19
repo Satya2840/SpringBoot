@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: app
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: oracle1
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+    show-sql: true
+server:
+  port: 8082
